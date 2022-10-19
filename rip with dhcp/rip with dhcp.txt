@@ -1,0 +1,12 @@
+en
+conf t
+int f0/0
+ip address 192.168.20.1 255.255.255.0
+no shut
+exit
+
+ip dhcp excluded-address 192.168.20.10 192.168.20.250
+ip dhcp pool test_pool_name
+network 192.168.20.0 255.255.255.0
+default-router 192.168.20.1
+dns-server 192.168.20.2

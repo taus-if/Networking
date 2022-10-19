@@ -1,0 +1,58 @@
+Router 24
+
+enable
+conf t
+router ospf 1
+network 192.168.11.0 0.0.0.255 area 1
+network 192.168.1.0 0.0.0.255 area 1
+network 192.168.12.0 0.0.0.255 area 1
+
+Router 25
+
+enable
+conf t
+router ospf 1
+network 192.168.12.0 0.0.0.255 area 1
+network 192.168.2.0 0.0.0.255 area 1
+
+Router 21
+
+enable
+conf t
+router ospf 1
+network 192.168.11.0 0.0.0.255 area 1
+network 192.168.9.0 0.0.0.255 area 0
+
+router 18
+
+enable
+conf t
+router ospf 1
+network 192.168.9.0 0.0.0.255 area 0
+network 192.168.6.0 0.0.0.255 area 0
+
+Router 19
+
+enable
+conf t
+router ospf 1
+network 192.168.6.0 0.0.0.255 area 0
+network 192.168.7.0 0.0.0.255 area 0
+
+Router 22
+
+enable
+conf t
+router ospf 1
+network 192.168.8.0 0.0.0.255 area 0
+network 192.168.13.0 0.0.0.255 area 1
+network 192.168.14.0 0.0.0.255 area 1
+
+Router 27
+
+enable
+conf t
+router ospf 1
+network 192.168.14.0 0.0.0.255 area 1
+network 192.168.4.0 0.0.0.255 area 1
+
